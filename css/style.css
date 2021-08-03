@@ -1,0 +1,19 @@
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rosybrown;
+}
+#button__email{
+    width: 300px;
+}
+#button__email:before{
+    content: "Are you already registered?";
+}
+#button__email:hover:before {
+    content:"Click here to check your e-mail";
+}
+#check__mail input[type="email"]:focus::placeholder{
+    transition: opacity 0.2s;
+    opacity: 0;
+}
