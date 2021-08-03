@@ -15,17 +15,30 @@
 <body>
     <header class="position-fixed">
         <div class="container p-3">
-                <h1 class=" pb-3 text-center">Welcome to boolean dice game</h1>
-                <button id="button__email" class="rounded-pill text-center" onclick="showMail()"></button>
-                <div id="check__mail" class="d-none">
-                    <input type="email" placeholder="Insert your email" id="emailInput">
-                    <button class="rounded-pill" onclick="checkMail()">ckeck your email</button>
-                </div>
+            <h1 class=" pb-3 text-center">Welcome to boolean dice game</h1>
+            <button id="button__email" class="rounded-pill text-center" onclick="showMail()"></button>
+            <div id="check__mail" class="d-none">
+                <input type="email" placeholder="Insert your email" id="emailInput">
+                <button class="rounded-pill" onclick="checkMail()">ckeck your email</button>
+            </div>
+            <div class="d-none" id="userLogged">
+                <h2></h2>
             </div>
         </div>
     </header>
     <main>
-
+        <div id="diceForm" class="container pt-4 d-none">
+            <input type="tel" maxlength="1" id="userDice" placeholder="Insert a number from 1 to 6">
+            <input type="radio" id="pair" name="parity" value="pair" checked>
+            <label for="pair">Pair</label>
+            <input type="radio" id="even" name="parity" value="even">
+            <label for="even">Even</label>
+            <button class="rounded-pill mb-3" onclick="dicePlay()">Play</button>
+            <div class="d-none dice__results">
+                <input type="number" id="computerDice">
+                <h2 class="dice__result--text">you won</h2>
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>

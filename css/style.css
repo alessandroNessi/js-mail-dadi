@@ -2,7 +2,11 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 150px;
     background-color: rosybrown;
+    border-radius: 0 0 30px 30px;
+    border:2px solid plum;
+    box-shadow: 0 0 10px 2px black;
 }
 #button__email{
     width: 300px;
@@ -16,4 +20,18 @@ header{
 #check__mail input[type="email"]:focus::placeholder{
     transition: opacity 0.2s;
     opacity: 0;
+}
+main{
+    padding-top: 150px;
+    height: calc(100vh);
+    background-color: rgba(0, 255, 0, 0.1);
+}
+main #userDice::placeholder, main #computerDice::placeholder{
+    font-size: 0.9rem;
+}
+main #userDice, main #computerDice{
+    width: 200px;
+}
+#userLogged h2{
+    color: #555555;
 }
