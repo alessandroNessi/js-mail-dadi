@@ -64,7 +64,7 @@ function dicePlay(){
                 document.getElementsByClassName("dice__result--text")[0].innerHTML="YOU LOST!";
             }
         }else if(parity=="even"){
-            document.getElementsByClassName("dice__result--text")[0].innerHTML="YOU WON!";
+            document.getElementsByClassName("dice__result--text")[0].innerHTML="YOU WIN!";
         }else{
             document.getElementsByClassName("dice__result--text")[0].innerHTML="YOU LOST!";
         }
